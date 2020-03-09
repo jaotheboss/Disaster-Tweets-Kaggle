@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Mar  5 11:36:00 2020
-
-@author: jaoming
-"""
-
-import os
-os.chdir('/Users/jaoming/Documents/Codes/Disaster Tweets (Kaggle)')
-
 import pandas as pd
 import numpy as np
 from nltk.corpus import stopwords
@@ -105,13 +94,3 @@ final = final.reset_index()
 final.columns = ['id', 'target']
 
 final.to_csv('results.csv', index = False)
-
-
-
-
-
-
-
-
-
-
